@@ -1,0 +1,92 @@
+h1 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #4682b4;
+    /* border-top: 10px solid; */
+    padding: 20px;
+    font-size: 40px;
+}
+.container {
+    background-color: #eee;
+    padding: 5% 2.5%;
+    width: 95%;
+    margin: 0 auto;
+}
+.container>div{
+  margin: 0 auto;
+  width: max-content;
+}
+table{
+  width:380px;
+  padding: 10px;
+  background-color: #fff;
+  display: block;
+  font-size: 14px;
+  border-collapse: collapse;
+  text-align: center;
+}
+thead{
+  background-color:#666 ;
+  color:#fff;
+}
+th,td{
+  padding: 10px;
+  width: 107px;
+}
+tr{
+  border-top: 1px solid #ccc;
+}
+tr:first-child{
+  border-top:none;
+}
+@media (min-width: 1194px){
+  table,.graph{
+    float: left;
+  }
+  table{
+    margin: 0 20px 30px 0;
+  }
+
+}
+@media (max-width: 1193px){
+  table,.graph{
+    max-width:100%;
+    margin:0 auto;
+  }
+  table{
+      margin-bottom:30px;
+  }
+  .container>div{
+    margin: 0 auto;
+    width: inherit;
+  }
+}
+@media (max-width: 400px){
+  table{
+    width:90%;
+    padding:5%;
+  }
+}
+.graph{
+  border: none;
+  background-color:#fff;
+  width: 600px;
+  height: 430px;
+  margin:0 auto;
+  display: block;
+}
+table, .graph{
+  -webkit-box-shadow: 0 0 5px #aaa;
+  box-shadow: 0 10px 5px #ddd;
+}
+footer{
+  font-size:12px;
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px;
+}
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+}
