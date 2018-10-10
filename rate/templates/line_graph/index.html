@@ -15,7 +15,7 @@ Rate
                     <th>Rate</th>
                     <th>Datetime</th>
                     <th>
-                        <a href="{% url 'add' %}" class="btn btn-primary btn-sm">Add</a>
+                        <a href="{% url 'line_graph:add' %}" class="btn btn-primary btn-sm">Add</a>
                     </th>
                 </tr>
             </thead>
@@ -25,8 +25,8 @@ Rate
                     <td>{{ rate_list.rate }}</td>
                     <td>{{ rate_list.datetime }}</td>
                     <td>
-                        <a href="{% url 'edit' id=rate_list.id %}" class="btn btn-primary btn-sm">Edit</a>
-                        <a href="{% url 'delete' id=rate_list.id %}" class="btn btn-primary btn-sm" id="btn_del">Delete</a>
+                        <a href="{% url 'line_graph:edit' id=rate_list.id %}" class="btn btn-primary btn-sm">Edit</a>
+                        <a href="{% url 'line_graph:delete' id=rate_list.id %}" class="btn btn-primary btn-sm" id="btn_del">Delete</a>
                     </td>
                 </tr>
                 {% endfor %}

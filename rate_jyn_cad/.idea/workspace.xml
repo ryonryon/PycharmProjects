@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b19d92c2-edde-4f9f-8294-45191b52089b" name="Default Changelist" comment="" />
+    <list default="true" id="b19d92c2-edde-4f9f-8294-45191b52089b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../rate/templates/line_graph/graph.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rate/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../rate/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rate/line_graph/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../rate/line_graph/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rate/line_graph/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../rate/line_graph/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rate/rate_line_graph.html" beforeDir="false" afterPath="$PROJECT_DIR$/../rate/rate_line_graph.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rate/templates/line_graph/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../rate/templates/line_graph/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rate/templates/line_graph/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../rate/templates/line_graph/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,27 +27,28 @@
     <session id="1392599049">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="3" />
-          <entry key="html" value="11" />
+          <entry key="css" value="4" />
+          <entry key="html" value="12" />
           <entry key="py" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="3" />
-          <entry key="HTML" value="11" />
+          <entry key="CSS" value="4" />
+          <entry key="HTML" value="12" />
           <entry key="Python" value="56" />
         </counts>
       </usages-collector>
@@ -79,7 +89,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_crud/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -87,6 +97,24 @@
               <folding>
                 <marker date="1538864368392" expanded="true" signature="85:90" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/display_rate/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-195">
+              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -101,6 +129,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -133,6 +164,7 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -149,7 +181,24 @@
             <path>
               <item name="rate_jyn_cad" type="b2602c69:ProjectViewProjectNode" />
               <item name="rate_jyn_cad" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rate_jyn_cad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rate_jyn_cad" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rate_jyn_cad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rate_jyn_cad" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rate_jyn_cad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rate_jyn_cad" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="display_rate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rate_jyn_cad" type="b2602c69:ProjectViewProjectNode" />
@@ -258,8 +307,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.2746781" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.27825466" />
       <window_info id="Structure" order="1" sideWeight="0.50089765" side_tool="true" weight="0.26037195" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -270,7 +320,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32891566" />
@@ -421,20 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/display_rate/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_crud/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -452,6 +488,20 @@
           <folding>
             <marker date="1538864368392" expanded="true" signature="85:90" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/display_rate/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
         </state>
       </provider>
     </entry>

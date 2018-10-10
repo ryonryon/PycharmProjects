@@ -13,7 +13,7 @@ def index(request):
     line_graph_data = RateData.objects.order_by('datetime', 'rate', 'id')
 
     rate_dict = {'line_graph_data': line_graph_data}
-    create_rate_line_graph(rate_dict)
+    #create_rate_line_graph(rate_dict)
     return render(request, 'line_graph/index.html', context=rate_dict)
 
 
@@ -73,3 +73,11 @@ def create_rate_line_graph(rate_lists_dic):
 
     fig = graph_objs.Figure(data=data, layout=layout)
     offline.plot(fig, filename='rate_line_graph', auto_open=False, show_link=False)
+
+
+def graph(request):
+    line_graph_data = RateData.objects.order_by('datetime', 'rate')
+
+    rate_dict = {'line_graph_data': line_graph_data}
+    create_rate_line_graph(rate_dict)
+    return render(request, 'line_graph/graph.html', context=rate_dict)

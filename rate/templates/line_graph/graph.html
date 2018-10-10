@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}
+Rate
+{% endblock title %}
+
+{% block content %}
+<h3>Rate</h3>
+
+<div class="container">
+    <div class="clearfix">
+        {% if rate_lists %}
+            <a class="btn btn-info pull-right" href="#">Get Rate</a>
+
+            <table class="table table-bordered table-condensed table-hover" style="width: 300px;">
+                <thead>
+                    <tr>
+                        <th>date</th>
+                        <th>time</th>
+                        <th>rate</th>
+                    </tr>
+                </thead>
+                {% for acc in rate_lists %}
+                    <tr>
+                        <td>{{ acc.datetime.date }}</td>
+                        <td>{{ acc.datetime.time }}</td>
+                        <td>{{ acc.rate }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+            <iframe class="graph" src="/static/html/rate_line_graph.html"></iframe>
+        {% else %}
+            <h1>There is no date.</h1>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock content %}
+<script>
+    $(function(){
+        $("#btn_del").click(function(){
+            if(confirm("Do you really want to delete?")){
+                //yesの
+            }else{
+                //cancel
+                return false;
+            }
+        });
+    })
+</script>
+{% block script %}
+{% endblock %}
