@@ -9,7 +9,7 @@ Rate
 
 <div class="container">
     <div class="clearfix">
-        {% if rate_lists %}
+        {% if line_graph_data %}
             <a class="btn btn-info pull-right" href="#">Get Rate</a>
 
             <table class="table table-bordered table-condensed table-hover" style="width: 300px;">
@@ -20,7 +20,7 @@ Rate
                         <th>rate</th>
                     </tr>
                 </thead>
-                {% for acc in rate_lists %}
+                {% for acc in line_graph_data %}
                     <tr>
                         <td>{{ acc.datetime.date }}</td>
                         <td>{{ acc.datetime.time }}</td>
@@ -36,17 +36,5 @@ Rate
 </div>
 
 {% endblock content %}
-<script>
-    $(function(){
-        $("#btn_del").click(function(){
-            if(confirm("Do you really want to delete?")){
-                //yesの
-            }else{
-                //cancel
-                return false;
-            }
-        });
-    })
-</script>
 {% block script %}
 {% endblock %}
