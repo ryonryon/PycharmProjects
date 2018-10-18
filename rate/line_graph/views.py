@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404
 from django.shortcuts import redirect
+import datetime
 
 from plotly import graph_objs
 from plotly import offline
@@ -35,7 +36,7 @@ def edit(request, id=None):
     return render(request, 'line_graph/edit.html', dict(form=form, id=id))
 
 
-def delete(request):
+def delete(request, id=None):
     ratedata = get_object_or_404(RateData, pk=id)
     ratedata.delete()
     return redirect('line_graph:index')
@@ -78,3 +79,7 @@ def create_rate_line_graph(rate_lists_dic):
 
     fig = graph_objs.Figure(data=data, layout=layout)
     offline.plot(fig, filename='rate_line_graph', auto_open=False, show_link=False)
+
+
+def get_data():
+    pass
