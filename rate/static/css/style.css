@@ -90,3 +90,6 @@ footer{
   display: block;
   clear: both;
 }
+.graph-frame{
+  width: 300px;
+}
