@@ -6,12 +6,12 @@ Rate
 
 {% block content %}
 <h3>Rate</h3>
-
 <div class="container">
+    <a class="btn btn-primary btn-sm" href="#">Get Rate</a>
+    <a class="btn btn-primary btn-sm" href="{% url 'line_graph:index' %}">Data</a>
+    <div class="blank-bit"></div>
     <div class="clear-fix">
         {% if line_graph_data %}
-            <a class="btn btn-primary btn-sm" href="#">Get Rate</a>
-            <a class="btn btn-primary btn-sm" href="{% url 'line_graph:index' %}">Data</a>
             <table class="table table-bordered table-condensed table-hover graph-frame">
                 <thead>
                     <tr>
@@ -28,7 +28,7 @@ Rate
                     </tr>
                 {% endfor %}
             </table>
-            <iframe class="graph" src="/rate_line_graph.html"></iframe>
+            <iframe class="graph" src="/static/html/rate_line_graph.html"></iframe>
         {% else %}
             <h1>There is no date.</h1>
         {% endif %}

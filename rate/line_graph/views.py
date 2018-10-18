@@ -78,7 +78,7 @@ def create_rate_line_graph(rate_lists_dic):
     )
 
     fig = graph_objs.Figure(data=data, layout=layout)
-    offline.plot(fig, filename='rate_line_graph', auto_open=False, show_link=False)
+    offline.plot(fig, filename='./static/html/rate_line_graph', auto_open=False, show_link=False)
 
 
 def get_data():
