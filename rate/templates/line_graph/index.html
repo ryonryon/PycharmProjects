@@ -1,43 +1,40 @@
 {% extends "base.html" %}
 
-{% block title %}
-Rate
-{% endblock title %}
+{% block title %}Rate{% endblock title %}
 
 {% block content %}
-<h3>Rate</h3>
 
-<div class="container">
-    {% if line_graph_data %}
-        <table class="table table-striped table-bordered">
-            <thead>
-                <tr>
-                    <th>Rate</th>
-                    <th>Datetime</th>
-                    <th>
-                        <a href="{% url 'line_graph:add' %}" class="btn btn-primary btn-sm">Add</a>
-                        <a href="{% url 'line_graph:graph' %}" class="btn btn-primary btn-sm">graph</a>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for rate_list in line_graph_data %}
-                <tr>
-                    <td>{{ rate_list.rate }}</td>
-                    <td>{{ rate_list.datetime }}</td>
-                    <td>
-                        <a href="{% url 'line_graph:edit' id=rate_list.id %}" class="btn btn-primary btn-sm">Edit</a>
-                        <a href="{% url 'line_graph:delete' id=rate_list.id %}" class="btn btn-primary btn-sm" id="btn_del">Delete</a>
-                    </td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    {% else %}
-        <h3>There is no date.</h3>
-    {% endif %}
-</div>
+    <h3>Rate</h3>
+
+    <div class="container">
+        {% if line_graph_data %}
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Rate</th>
+                        <th>Datetime</th>
+                        <th>
+                            <a href="{% url 'line_graph:add' %}" class="btn btn-primary btn-sm">Add</a>
+                            <a href="{% url 'line_graph:graph' %}" class="btn btn-primary btn-sm">graph</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for rate_list in line_graph_data %}
+                    <tr>
+                        <td>{{ rate_list.rate }}</td>
+                        <td>{{ rate_list.datetime }}</td>
+                        <td>
+                            <a href="{% url 'line_graph:edit' id=rate_list.id %}" class="btn btn-primary btn-sm">Edit</a>
+                            <a href="{% url 'line_graph:delete' id=rate_list.id %}" class="btn btn-primary btn-sm" id="btn_del">Delete</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <h3>There is no date.</h3>
+        {% endif %}
+    </div>
 
 {% endblock content %}
-{% block script %}
-{% endblock %}
